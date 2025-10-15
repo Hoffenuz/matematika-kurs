@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aloqa — Matematika O'quv Markazi</title>
+  <title>Kurslar — Matematika O'quv Markazi</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
       <nav class="nav">
         <a href="index.html">Bosh sahifa</a>
         <a href="about.html">Haqida</a>
-        <a href="courses.html">Kurslar</a>
+        <a href="courses.html" class="active">Kurslar</a>
         <a href="lessons.html">Darslik</a>
         <a href="books.html">Kitoblar</a>
         <a href="contact.html" class="btn-outline">Aloqa</a>
@@ -28,37 +28,23 @@
   </header>
 
   <main>
-    <section class="section contact">
-      <div class="container contact-inner">
-        <div class="contact-card">
-          <h2>Biz bilan bog'laning</h2>
-          <p>Savollaringiz yoki ro'yxatdan o'tish uchun shaklni to'ldiring.</p>
-          <form id="contact-form">
-            <label for="name">Ismingiz</label>
-            <input id="name" name="name" type="text" required />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
-
-            <label for="message">Xabar</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <div class="form-actions">
-              <button type="submit" class="btn-primary">Yuborish</button>
-              <a href="index.html" class="btn-secondary">Ortga</a>
-            </div>
-          </form>
+    <section class="section courses">
+      <div class="container">
+        <h1>Kurslarimiz</h1>
+        <div class="cards">
+          <div class="card">
+            <h3>Boshlang'ich</h3>
+            <p>Asosiy tushunchalar va muhim metodlar.</p>
+          </div>
+          <div class="card">
+            <h3>O'rta</h3>
+            <p>Muammoli masalalarni yechish va tezkor texnikalar.</p>
+          </div>
+          <div class="card">
+            <h3>Oliy</h3>
+            <p>Oliy o'quv yurtlariga tayyorgarlik va murakkab mavzular.</p>
+          </div>
         </div>
-        <div class="contact-info">
-          <h3>Manzil</h3>
-          <p>Toshkent, O'zbekiston</p>
-          <h3>Telefon</h3>
-          <p>+998 90 123 45 67</p>
-          <h3>Email</h3>
-          <p>info@matematika.uz</p>
-        </div>
-        </section>
-        
       </div>
     </section>
   </main>
@@ -71,7 +57,7 @@
       </div>
     </div>
   </footer>
- <script src="scripts.js"></script>
+
+<script src="scripts.js"></script>
 </body>
 </html>
-

@@ -5,6 +5,24 @@ if(hamburger){
   hamburger.addEventListener('click', ()=>{nav.classList.toggle('open')})
 }
 
+// Search handler (basic stub)
+const searchBtn = document.getElementById('search-btn');
+const siteSearchInput = document.getElementById('site-search');
+if(searchBtn && siteSearchInput){
+  searchBtn.addEventListener('click', ()=>{
+    const q = siteSearchInput.value.trim();
+    if(!q) return alert('Iltimos, so\'z kiriting');
+    // Basic client-side search: try to find pages containing the query
+    const pages = ['index.html','about.html','courses.html','lessons.html','books.html','contact.html'];
+    const found = pages.filter(p=>p.toLowerCase().includes(q.toLowerCase()));
+    if(found.length){
+      window.location.href = found[0];
+    } else {
+      alert('Hech narsa topilmadi.');
+    }
+  })
+}
+
 // Admin modal
 const adminBtn = document.getElementById('admin-btn');
 const adminModal = document.getElementById('admin-modal');

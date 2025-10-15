@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aloqa — Matematika O'quv Markazi</title>
+  <title>Kitoblar — Matematika O'quv Markazi</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
         <a href="about.html">Haqida</a>
         <a href="courses.html">Kurslar</a>
         <a href="lessons.html">Darslik</a>
-        <a href="books.html">Kitoblar</a>
+        <a href="books.html" class="active">Kitoblar</a>
         <a href="contact.html" class="btn-outline">Aloqa</a>
       </nav>
       <div class="nav-search">
@@ -28,37 +28,28 @@
   </header>
 
   <main>
-    <section class="section contact">
-      <div class="container contact-inner">
-        <div class="contact-card">
-          <h2>Biz bilan bog'laning</h2>
-          <p>Savollaringiz yoki ro'yxatdan o'tish uchun shaklni to'ldiring.</p>
-          <form id="contact-form">
-            <label for="name">Ismingiz</label>
-            <input id="name" name="name" type="text" required />
+    <section class="section books">
+      <div class="container">
+        <h1>Kitoblar</h1>
+        <p class="muted">Kitoblar va qo'llanmalar to'plami. Har bir kitobni yuklab olish yoki ochish mumkin.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>Algebra — 8-sinf</h3>
+            <p>Asosiy masalalar va yechimlar to'plami.</p>
+            <a class="card-link" href="manba/Algebra. 8-sinf (2014, Sh.Alimov, O.Xolmuhamedov).pdf" download>Yuklab olish</a>
+          </div>
+          <div class="card">
+            <h3>Geometriya — Darslik</h3>
+            <p>Geometriya misollar va nazariyalar.</p>
+            <a class="card-link" href="manba/Geometriya._1-qism_I.Isroilov_Z.Pashayev.pdf" download>Yuklab olish</a>
+          </div>
+          <div class="card">
+            <h3> Matematika (oq to'plam) </h3>
+            <p> Abutrentlar uchun mavzulashtirilgan test to'plami </p>
+            <a class="card-link" href="manba/Matematika.1996_2003.pdf" download> Yuklab olish</a>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
-
-            <label for="message">Xabar</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <div class="form-actions">
-              <button type="submit" class="btn-primary">Yuborish</button>
-              <a href="index.html" class="btn-secondary">Ortga</a>
-            </div>
-          </form>
+          </div>
         </div>
-        <div class="contact-info">
-          <h3>Manzil</h3>
-          <p>Toshkent, O'zbekiston</p>
-          <h3>Telefon</h3>
-          <p>+998 90 123 45 67</p>
-          <h3>Email</h3>
-          <p>info@matematika.uz</p>
-        </div>
-        </section>
-        
       </div>
     </section>
   </main>
@@ -71,7 +62,9 @@
       </div>
     </div>
   </footer>
- <script src="scripts.js"></script>
+
+<script src="scripts.js"></script>
 </body>
 </html>
+
 
